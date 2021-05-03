@@ -6,11 +6,11 @@
     <link href="styles/main.css" type="text/css" rel="stylesheet"/>
     <title>4C Cafe</title>
   </head>
-
+  
   <body>
     <div class="main_nav">
-      <a class="active" href="index.php">4C - Cornell</a>
-      <a href="about.php">About</a>
+      <a href="index.php">4C - Cornell</a>
+      <a class="active" href="about.php">About</a>
       <div class="main_nav_right">
         <a href="contact.php">Contact</a>
         <a href="#">Login</a>
@@ -18,31 +18,12 @@
       </div>
     </div>
 
-    <p>Banner</p>
-    <!-- <img class="banner" src="images/4C_banner.jpg" alt="banner"/> -->
-
-    <div class="category">
-      <p>Number of members</p>
-
-      <?php
-        echo "Current time is " . date("h:ia") . " " . date("Y-m-d") . " " . date("l");
-      ?>
-
-      <p>[Notice]</p>
-      
-      <p>Rankings</p>
-    </div>
-
-    <div class="main">
-      <p>Main content</p>
-    </div>
-    
     <hr style="height:2px;border-width:0;color:gray;background-color:gray">
     <footer>
       4C Cornell Cafe - created by YoungSeok (Alex) Na '22
       <br>
       Under construction since 05/01/2021
     </footer>
-
+    
   </body>
 </html>
