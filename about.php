@@ -8,22 +8,16 @@
   </head>
   
   <body>
-    <div class="main_nav">
-      <a href="index.php">4C - Cornell</a>
-      <a class="active" href="about.php">About</a>
-      <div class="main_nav_right">
-        <a href="contact.php">Contact</a>
-        <a href="#">Login</a>
-        <!-- <a href="#">한/영</a> -->
-      </div>
+    <?php include("includes/navigation.php"); ?>
+    
+    <div class="about">
+      <img class="image_4c" src="images/4C_banner.jpg" alt="banner"/>
+      <p>
+        4C - K(C)orean Catholic Community at Cornell
+      </p>
     </div>
 
-    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-    <footer>
-      4C Cornell Cafe - created by YoungSeok (Alex) Na '22
-      <br>
-      Under construction since 05/01/2021
-    </footer>
+    <?php include("includes/footer.php"); ?>
     
   </body>
 </html>

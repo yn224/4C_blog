@@ -1,3 +1,6 @@
+<?php 
+  $nav_class = "current_page";
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,41 +11,46 @@
   </head>
 
   <body>
-    <div class="main_nav">
-      <a class="active" href="index.php">4C - Cornell</a>
-      <a href="about.php">About</a>
-      <div class="main_nav_right">
-        <a href="contact.php">Contact</a>
-        <a href="#">Login</a>
-        <!-- <a href="#">한/영</a> -->
+
+    <?php include("includes/navigation.php"); ?>
+
+    <div class="banner">
+      <div class="welcome_msg">
+        <a href="#register_php" class="btn">Join us!</a>
+      </div>
+      <div class="login_div">
+        <form action="index.php" method="post">
+          <h2>Login</h2>
+          <input type="text" name="username" placeholder="Username">
+          <input type="password" name="password"  placeholder="Password"> 
+          <button class="btn" type="submit" name="login_btn">Sign in</button>
+        </form>
       </div>
     </div>
 
-    <p>Banner</p>
-    <!-- <img class="banner" src="images/4C_banner.jpg" alt="banner"/> -->
-
-    <div class="category">
-      <p>Number of members</p>
-
-      <?php
-        echo "Current time is " . date("h:ia") . " " . date("Y-m-d") . " " . date("l");
-      ?>
-
-      <p>[Notice]</p>
-      
-      <p>Rankings</p>
-    </div>
-
-    <div class="main">
-      <p>Main content</p>
-    </div>
+    <!-- <div class="search">
+      <form>
+        <input></input>
+        <button>Search</button>
+      </form>
+    </div> -->
     
-    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-    <footer>
-      4C Cornell Cafe - created by YoungSeok (Alex) Na '22
-      <br>
-      Under construction since 05/01/2021
-    </footer>
+    <div class="content">
+      <div class="column left">
+        <p>Side-nav</p>
+        <p>Number of members: ???</p>
+        <?php
+          echo "Current time is " . date("h:ia") . " " . date("Y-m-d") . " " . date("l");
+        ?>
+        <p>[Notice]</p>
+      </div>
+      <div class="column right">
+        <p>Posts</p>
+        <!-- <hr> -->
+      </div>
+    </div>
 
+    <?php include("includes/footer.php"); ?>
+    
   </body>
 </html>

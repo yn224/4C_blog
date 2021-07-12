@@ -8,22 +8,26 @@
   </head>
   
   <body>
-    <div class="main_nav">
-      <a href="index.php">4C - Cornell</a>
-      <a href="about.php">About</a>
-      <div class="main_nav_right">
-        <a class="active" href="contact.php">Contact</a>
-        <a href="#">Login</a>
-        <!-- <a href="#">한/영</a> -->
-      </div>
-    </div>
+    <?php include("includes/navigation.php"); ?>
 
-    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-    <footer>
-      4C Cornell Cafe - created by YoungSeok (Alex) Na '22
-      <br>
-      Under construction since 05/01/2021
-    </footer>
+    <div class="ticket_form">
+      <p>For bugs or improvement ideas, please file a ticket using the form below.</p>
+      <hr>
+      <p>1. How can I help you?</p>
+      <select>
+        <option>Bug Fix</option>
+        <option>Improvement Idea</option>
+        <option>General</option>
+      </select>
+      <p>2. Enter any comments</p>
+      <form>
+        <textarea name="comments" cols="20" rows="5">Enter your comments...
+        </textarea>
+      </form>
 
+      <button id="submit" type="submit">Submit</button>
+    </div>  
+
+    <?php include("includes/footer.php"); ?>
   </body>
 </html>

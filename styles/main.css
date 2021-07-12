@@ -1,3 +1,9 @@
+/* General */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   margin-left: 5%;
   margin-right: 5%;
@@ -5,18 +11,33 @@ body {
   font-family: "Arial"
 }
 
+/* ============================ Main Page ============================ */
+
+/* Header */
+
 .main_nav {
+  margin: 0;
   background-color: #333;
   overflow: hidden;
+  border-radius: 0px 0px 6px 6px;
+  padding: 2% 2%;
+}
+
+.main_nav ul {
+  list-style: none;
+  float: right;
+}
+
+.main_nav ul li {
+  float: left;
 }
 
 .main_nav a {
-  float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 20px 28px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .main_nav a:hover {
@@ -24,25 +45,139 @@ body {
   color: black;
 }
 
-.main_nav a.active {
+/* .main_nav a.active {
+  background-color: #04AA6D;
+  color: white;
+} */
+
+.title {
   background-color: #04AA6D;
   color: white;
 }
 
-.main_nav_right {
+.search {
+  display: block;
+  overflow: hidden;
   float: right;
+  margin: -12px 0 8px;
+  background-color: rgb(22, 22, 148);
+  /* padding: 5px; */
+  /* position: relative; */
 }
 
+/* Body */
+
+/* Login Form */
 .banner {
-  display: block;
-  margin: auto;
+	margin: 5px auto;
+  background-color: #b0d599;
+  height: 300px;  
+	border-radius: 5px;
+}
+
+.banner .welcome_msg {
+	width: 45%;
+	float: left;
+	padding: 20px;
+  font-family: 'Noto Serif', serif;
+}
+
+.banner .welcome_msg a:hover {
+	background: #374447;
+}
+
+.banner .login_div {
+	width: 50%;
+	float: left;
+}
+.banner .login_div form {
+	margin-top: 40px;
+}
+.banner .login_div form h2 {
+	color: white;
+	margin-bottom: 20px;
+  font-family: 'Noto Serif', serif;
+}
+.banner .login_div form input {
+	width: 60%;
+	color: white;
+	border: 1px solid white;
+	margin: 10px auto;
+	letter-spacing: 1.3px;
+  font-family: 'Noto Serif', serif;
+}
+.banner .login_div form button {
+	display: block;
+	background: #006384;
+	margin-left: 20%;
+}
+
+/* Main content */
+.content {
+  display: flex;
   margin-top: 1%;
   margin-bottom: 2%;
-  max-width: 70vh;
-  max-height: 50vh;
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
 }
+
+.content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+}
+
+.left {
+  background-color: goldenrod;
+  width: 10%;
+}
+
+.right {
+  background-color: hotpink;
+  width: 90%;
+  margin-left: 2%;
+}
+
+.side_nav {
+  border: double 7px #b0d599;
+  border-radius: 25px;
+  flex: 1;
+  width: 200px;
+}
+
+/* Footer */
 
 footer {
   font-size: 11px;
   margin-bottom: 2%;
+}
+
+/* ============================ About page ============================ */
+.about {
+  margin: 3% 3%;
+}
+
+.image_4c {
+  width: 50%;
+  height: 30%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2%;
+}
+
+/* ============================ Contact page ============================ */
+.ticket_form {
+  display: block;
+  width: 50%;
+  padding: 2%;
+  /* margin: 30px auto 60px auto; */
+  margin: 1% 20% 1% 25%;
+  text-align: center;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
 }
